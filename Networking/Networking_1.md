@@ -13,7 +13,6 @@
 9. [QoS & Traffic Shaping](#qos--traffic-shaping)
 10. [Network Tools & Utilities](#network-tools--utilities)
 11. [Packet Analysis](#packet-analysis)
-12. [SNMP Monitoring](#snmp-monitoring)
 13. [TCP/IP Troubleshooting](#tcpip-troubleshooting)
 14. [Homelab Use Cases](#homelab-use-cases)
 15. [Performance Tuning & Optimization](#performance-tuning--optimization)
@@ -158,19 +157,6 @@ dig @8.8.8.8 example.com
 
 # Reverse lookup
 dig -x 192.168.1.1
-```
-
----
-
-## DHCP
-
-```bash
-# Check lease info
-cat /var/lib/dhcp/dhclient.leases
-
-# Release and renew IP
-sudo dhclient -r eth0
-sudo dhclient eth0
 ```
 
 ---
@@ -347,4 +333,3 @@ bmon
 | `iftop`          | Real-time bandwidth          |
 | `nload`          | Network usage                |
 | `bmon`           | Bandwidth monitor            |
-
